@@ -1,0 +1,242 @@
+/*================================
+【共通ヘッダー】 タブレット用
+=================================*/
+
+@media screen and (max-width: 959px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*================================
+【ホームページ】 タブレット用
+=================================*/
+
+@media screen and (max-width: 959px) {
+    .catch {
+        margin-top: 15%;
+    }
+    .catch-ttl {
+        font-size: 4rem;
+    }
+}
+
+/*================================
+【ニュースページ】 タブレット用
+=================================*/
+
+@media screen and (max-width: 959px) {
+    .news-page-top {
+        h2 {
+            font-size: 3rem;
+        }
+    }
+    .news-contents {
+        flex-direction: column;
+    }
+    .article {
+        padding: 0;
+        width: 100%;
+        &-ttl {
+            font-size: 1.5rem;
+            margin-left: 120px;
+            font-weight: bold;
+        }
+        &-heading {
+            margin-bottom: 60px;
+        }
+    }
+    .aside {
+        width: 100%;
+    }
+    .announce {
+        margin: 30px 0;
+        width: 100%;
+        height: 100px;
+        background: url(../img/new-menu2.jpg);
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+    }
+}
+/*================================
+【メニューページ】 タブレット用
+=================================*/
+
+@media screen and (max-width: 959px) {
+    .menu-content {
+        h2 {
+            font-size: 4rem;
+        }
+    }
+    .menu-feature {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+}
+
+/*================================
+【コンタクトページ】 タブレット用
+=================================*/
+
+@media screen and (max-width: 959px) {
+    .contact-main {
+        text-align: center;
+        margin-top: 30px;
+        h2 {
+            font-size: 4rem;
+        }
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .location {
+        &-info {
+            width: 100%;
+            p {
+                margin-bottom: 28px;
+            }
+        }
+        &-map {
+            width: 100%;
+        }
+    }
+    .sns-box {
+        width: 100%;
+    }
+
+
+    .fb-wrapper {
+        max-width: 959px; /* Facebook Page Plugin の最大幅 */
+        margin: 0 auto;
+    }
+     
+    .fb-wrapper > .fb-page {
+        width: 100%;
+    }
+     
+    .fb-wrapper > .fb-page > span,
+    .fb-wrapper iframe {
+        width: 100% !important;
+    }
+}
+
+
+
+
+/*================================
+=================================*/
+
+
+
+/*================================
+【共通ヘッダー】 モバイル用
+=================================*/
+
+@media screen and (max-width: 559px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*================================
+【ホームページ】  モバイル用
+=================================*/
+
+@media screen and (max-width: 559px) {
+    .catch {
+        margin-top: 20%;
+    }
+    .catch-ttl {
+        font-size: 3rem;
+    }
+}
+
+/*================================
+【ニュースページ】 モバイル用
+=================================*/
+
+@media screen and (max-width: 559px) {
+    .news-page-top {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+    .news-contents {
+        flex-direction: column;
+    }
+    .article {
+        width: 100%;
+        padding: 0;
+
+        &-heading {
+            margin-bottom: 30px;
+        }
+        &-ttl {
+            font-size: 1.375rem;
+            margin-left: 80px;
+        }
+        &-date {
+            width: 70px;
+            height: 70px;
+            font-size: 1rem;
+            span {
+                font-size: 0.875rem;
+            }
+        }
+        &-cat {
+            font-size: 0.875rem;
+            margin-top: 10px;
+            margin-left: 80px;
+        }
+    }
+    .aside {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .announce {
+        width: 100%;
+        height: 100px;
+        background: url(../img/new-menu2.jpg);
+        background-position:top center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+    }
+}
+
+/*================================
+【メニューページ】モバイル用
+=================================*/
+
+@media screen and (max-width: 559px) {
+    .menu-content {
+        margin-top: 20%;
+        h2 {
+            font-size: 2.8rem;
+        }
+    }
+    .big-box {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .big-box {
+        height: 100%;
+    }
+}
+
+/*================================
+【コンタクトページ】 モバイル用
+=================================*/
+
+@media screen and (max-width: 559px) {
+    .contact-main {
+        text-align: center;
+        margin-top: 30px;
+        h2 {
+            font-size: 3rem;
+        }
+    }
+}

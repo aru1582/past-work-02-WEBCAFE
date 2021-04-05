@@ -1,0 +1,74 @@
+.contact-page-top {
+    background: url(../img/contact-mv.jpg)no-repeat;
+    background-size: cover;
+    background-position:center;
+    min-height: 100vh;
+}
+.contact-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10%;
+
+    h2 {
+        font-size: 5rem;
+        text-transform: uppercase;
+    }
+    label {
+        font-size: 1.125rem;
+        margin-bottom: 10px;
+        display: block;
+    }
+    &-name {
+        background: rgba(255, 255, 255, .5);
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 240px;
+    }
+    &-email {
+        @extend .contact-main-name
+    }
+    &-message {
+        @extend .contact-main-name;
+        height: 6rem;
+        max-width: 400px;
+        padding: 0;
+    }
+    input[type="submit"] {
+        border: none;
+        line-height: 1;
+        cursor: pointer;
+        margin-top: 20px;
+    } 
+}
+.location {
+    margin: 60px 0;
+
+    &-info {
+        width: 22%;
+        p {
+            padding: 12px 10px;
+        }
+    }
+    &-map {
+        width: 68%;
+    }
+}
+iframe {
+    width: 100%;
+    vertical-align: bottom;
+}
+.sns {
+    background-color: #faf7f0;
+    padding: 4% 0;
+
+    .sub-ttl {
+        margin-bottom: 30px;
+    }
+    &-box {
+        width: 30%;
+    }
+}
+

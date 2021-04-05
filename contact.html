@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content=IE=edge">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans+JP:500,700|Noto+Sans:400,700|Noto+Serif|Noto+Serif+JP&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>WBC Cafe - CONTACT</title>
+    <scri src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v9.0" nonce="dAHkn8Cd"></script>
+
+    <div class="contact-page-top">
+
+        <header class="header">
+            <h1 class="header-logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></h1><!-- /.header-logo -->
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="news.html">news</a></li>
+                    <li><a href="menu.html">menu</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav><!-- /.header-nav -->
+        </header><!-- /.header -->
+
+        <div class="contact-main">
+            <h2>contact</h2>
+            <form action="#">
+
+                <div>
+                    <label for="name">お名前</label>
+                    <input class="contact-main-name" type="text" name="your-name" id="name">
+                </div>
+    
+                <div>
+                    <label for="email">メールアドレス</label>
+                    <input class="contact-main-email" type="email" name="your-name" id="email">
+                </div>
+    
+                <div>
+                    <label for="message">メッセージ</label>
+                    <textarea class="contact-main-message" name="your-message" id="message"></textarea><!-- /# -->
+                </div>
+    
+                <input class="btn" type="submit" name="submit" value="送信">
+    
+            </form>
+        </div><!-- /.contact-main -->
+
+    </div><!-- /.contact-page-top -->
+
+    <section class="location">
+        <div class="wrapper">
+
+            <div class="location-info">
+                <h3 class="sub-ttl">カフェ東駅前店</h3><!-- /.location-ttl -->
+                <p>
+                    住所： 東京都〇〇区<br>
+                    〇〇〇〇〇〇〇 000-22-1<br>
+                    〇〇〇〇<br>
+                    電話： 03-1111-1111<br>
+                    営業時間： 10:00〜20:00<br>
+                    休日：水曜
+                </p>
+            </div><!-- /.location-info -->
+            <div class="location-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.44951592349!2d139.70726626568776!3d35.66593208019788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c9fee70f285%3A0x4054b8b23563631c!2z6KGo5Y-C6YGT6aeF!5e0!3m2!1sja!2sjp!4v1605027308849!5m2!1sja!2sjp" width="800" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div><!-- /.location-map -->
+
+        </div><!-- /.wrapper -->
+    </section><!-- /.location -->
+
+    <section class="sns">
+        <div class="wrapper">
+            <div class="sns-box fb-wrapper">
+                <h3 class="sub-ttl">Fecebook</h3><!-- /.sub-ttl -->
+                <div class="fb-page" data-href="https://www.facebook.com/webcreatorbox.fb/" data-tabs="timeline" data-width="" data-height="315" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/webcreatorbox.fb/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/webcreatorbox.fb/">Webクリエイターボックス</a></blockquote></div>
+            </div><!-- /.sns-box -->
+
+            <div class="sns-box">
+                <h3 class="sub-ttl">Twitter</h3><!-- /.sub-ttl -->
+                <a class="twitter-timeline" data-height="315" href="https://twitter.com/webcreatorbox?ref_src=twsrc%5Etfw">Tweets by webcreatorbox</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div><!-- /.sns-box -->
+
+            <div class="sns-box">
+                <h3 class="sub-ttl">Youtube</h3><!-- /.sub-ttl -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3BQNJlBehI4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div><!-- /.sns-box -->
+
+        </div><!-- /.wrapper -->
+    </section><!-- /.sns -->
+
+    <footer class="footer">
+        <p><small>&copy; 2019  Manabox</small></p>
+    </footer><!-- /.footer -->
+
+    <script>
+            $(function() {
+        // ページプラグインの埋め込みコードを返す
+        function pagePluginCode(w) {
+    
+            // 書き換えたStep3のコードを「return」に記述
+            return '<div class="fb-page" data-href="https://www.facebook.com/webcreatorbox.fb/" data-tabs="timeline" data-width=" ' + w + ' " data-height="315" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/webcreatorbox.fb/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/webcreatorbox.fb/">Webクリエイターボックス</a></blockquote></div>'
+        }
+     
+        // ページプラグインを追加する要素
+        var facebookWrap = $('.facebook-wrapper');
+        var fbBeforeWidth = ''; // 前回変更したときの幅
+        var fbWidth = facebookWrap.width(); // 今回変更する幅
+        var fbTimer = false;
+        $(window).on('load resize', function() {
+            if (fbTimer !== false) {
+                clearTimeout(fbTimer);
+            }
+            fbTimer = setTimeout(function() {
+                fbWidth = Math.floor(facebookWrap.width()); // 変更後の幅を取得し、小数点以下切り捨て
+                // 前回の幅から変更があった場合のみ処理
+                if(fbWidth != fbBeforeWidth) {
+                    facebookWrap.html(pagePluginCode(fbWidth)); // ページプラグインのコード変更
+                    window.FB.XFBML.parse(); // ページプラグインの再読み込み
+                    fbBeforeWidth = fbWidth; // 今回変更分を保存
+                }
+            }, 200);
+        });
+    });
+    </script>
+
+</body>
+
+</html>

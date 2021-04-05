@@ -1,0 +1,707 @@
+@charset "UTF-8";
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th {
+  text-align: left;
+}
+
+a:focus {
+  outline: none;
+}
+
+/*================================
+    フロートの解除
+=================================*/
+/* micro clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/*================================
+本体設定
+=================================*/
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #432;
+  line-height: 1.7;
+  font-family: serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+a {
+  color: #432;
+  text-decoration: none;
+  font-family: serif;
+}
+
+/*================================
+共通ヘッダー
+=================================*/
+.header {
+  max-width: 1100px;
+  padding: 0 10%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-logo {
+  width: 210px;
+  margin-top: 14px;
+}
+
+.header-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+
+.header-nav li {
+  margin-left: 36px;
+}
+
+.header-nav li:first-child {
+  margin-left: 0;
+}
+
+.header-nav a:hover {
+  color: #0bd;
+}
+
+/*================================
+共通フッター
+=================================*/
+.footer {
+  max-width: 100%;
+  text-align: center;
+  background-color: #432;
+  padding: 20px;
+  color: #fff;
+}
+
+/*================================
+共通ラッパー
+=================================*/
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/*================================
+共通サブタイトル
+=================================*/
+.sub-ttl {
+  font-size: 1.4rem;
+  border-bottom: 2px solid #0bd;
+  padding: 8px 0 8px;
+  font-weight: bold;
+}
+
+.home-page {
+  background-image: url(../img/home-mv.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.catch {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 4%;
+  text-align: center;
+  margin-top: 13%;
+}
+
+.catch-ttl {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.catch-txt {
+  font-size: 1.125rem;
+  margin: 10px 0 42px;
+  font-weight: bold;
+}
+
+.btn {
+  font-size: 1.375rem;
+  color: #fff;
+  background-color: #0bd;
+  padding: 18px 32px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #09a;
+}
+
+.news-page-top {
+  background-image: url(../img/news-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  margin-bottom: 30px;
+}
+
+.news-page-top h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.news-contents {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.article {
+  width: 60%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  padding: 0 4%;
+}
+
+.article-heading {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.article-ttl {
+  font-size: 2rem;
+  margin-left: 120px;
+  font-weight: bold;
+}
+
+.article-date {
+  background-color: #00bbdd;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.625rem;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.article-date span {
+  font-size: 1rem;
+  display: block;
+  border-top: 1px solid #fff;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 6px;
+}
+
+.article-cat {
+  margin-left: 120px;
+}
+
+.article img {
+  margin-bottom: 30px;
+}
+
+.article p {
+  margin-bottom: 20px;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+.aside {
+  width: 22%;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.aside-menu {
+  margin-bottom: 60px;
+}
+
+.aside-menu li {
+  border-bottom: 1px solid #ddd;
+}
+
+.aside-menu a {
+  display: block;
+  padding: 10px;
+}
+
+.aside-menu a:hover {
+  color: #0bd;
+}
+
+.aside p {
+  margin-top: 30px;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+.announce {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 160px;
+  height: 650px;
+  background-image: url(../img/new-menu1.jpg);
+  background-size: cover;
+}
+
+.menu-page-top {
+  background: url(../img/menu-mv.jpg) no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: top center;
+}
+
+.menu-content {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 0 10%;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.menu-content h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.menu-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 0;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+.menu-feature {
+  margin: 0 auto;
+  padding: 0 4%;
+  display: -ms-grid;
+  display: grid;
+  gap: 26px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+.big-box {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.big-box img {
+  height: 94%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact-page-top {
+  background: url(../img/contact-mv.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.contact-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
+.contact-main h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.contact-main label {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.contact-main-name, .contact-main-email, .contact-main-message {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 240px;
+}
+
+.contact-main-message {
+  height: 6rem;
+  max-width: 400px;
+  padding: 0;
+}
+
+.contact-main input[type="submit"] {
+  border: none;
+  line-height: 1;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.location {
+  margin: 60px 0;
+}
+
+.location-info {
+  width: 22%;
+}
+
+.location-info p {
+  padding: 12px 10px;
+}
+
+.location-map {
+  width: 68%;
+}
+
+iframe {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.sns {
+  background-color: #faf7f0;
+  padding: 4% 0;
+}
+
+.sns .sub-ttl {
+  margin-bottom: 30px;
+}
+
+.sns-box {
+  width: 30%;
+}
+
+/*================================
+【共通ヘッダー】 タブレット用
+=================================*/
+@media screen and (max-width: 959px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/*================================
+【ホームページ】 タブレット用
+=================================*/
+@media screen and (max-width: 959px) {
+  .catch {
+    margin-top: 15%;
+  }
+  .catch-ttl {
+    font-size: 4rem;
+  }
+}
+
+/*================================
+【ニュースページ】 タブレット用
+=================================*/
+@media screen and (max-width: 959px) {
+  .news-page-top h2 {
+    font-size: 3rem;
+  }
+  .news-contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .article {
+    padding: 0;
+    width: 100%;
+  }
+  .article-ttl {
+    font-size: 1.5rem;
+    margin-left: 120px;
+    font-weight: bold;
+  }
+  .article-heading {
+    margin-bottom: 60px;
+  }
+  .aside {
+    width: 100%;
+  }
+  .announce {
+    margin: 30px 0;
+    width: 100%;
+    height: 100px;
+    background: url(../img/new-menu2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+  }
+}
+
+/*================================
+【メニューページ】 タブレット用
+=================================*/
+@media screen and (max-width: 959px) {
+  .menu-content h2 {
+    font-size: 4rem;
+  }
+  .menu-feature {
+    -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+/*================================
+【コンタクトページ】 タブレット用
+=================================*/
+@media screen and (max-width: 959px) {
+  .contact-main {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .contact-main h2 {
+    font-size: 4rem;
+  }
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .location-info {
+    width: 100%;
+  }
+  .location-info p {
+    margin-bottom: 28px;
+  }
+  .location-map {
+    width: 100%;
+  }
+  .sns-box {
+    width: 100%;
+  }
+}
+
+/*================================
+=================================*/
+/*================================
+【共通ヘッダー】 モバイル用
+=================================*/
+@media screen and (max-width: 559px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/*================================
+【ホームページ】  モバイル用
+=================================*/
+@media screen and (max-width: 559px) {
+  .catch {
+    margin-top: 20%;
+  }
+  .catch-ttl {
+    font-size: 3rem;
+  }
+}
+
+/*================================
+【ニュースページ】 モバイル用
+=================================*/
+@media screen and (max-width: 559px) {
+  .news-page-top h2 {
+    font-size: 2rem;
+  }
+  .news-contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .article {
+    width: 100%;
+    padding: 0;
+  }
+  .article-heading {
+    margin-bottom: 30px;
+  }
+  .article-ttl {
+    font-size: 1.375rem;
+    margin-left: 80px;
+  }
+  .article-date {
+    width: 70px;
+    height: 70px;
+    font-size: 1rem;
+  }
+  .article-date span {
+    font-size: 0.875rem;
+  }
+  .article-cat {
+    font-size: 0.875rem;
+    margin-top: 10px;
+    margin-left: 80px;
+  }
+  .aside {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .announce {
+    width: 100%;
+    height: 100px;
+    background: url(../img/new-menu2.jpg);
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+  }
+}
+
+/*================================
+【メニューページ】モバイル用
+=================================*/
+@media screen and (max-width: 559px) {
+  .menu-content {
+    margin-top: 20%;
+  }
+  .menu-content h2 {
+    font-size: 2.8rem;
+  }
+  .big-box {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .big-box {
+    height: 100%;
+  }
+}
+
+/*================================
+【コンタクトページ】 モバイル用
+=================================*/
+@media screen and (max-width: 559px) {
+  .contact-main {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .contact-main h2 {
+    font-size: 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
